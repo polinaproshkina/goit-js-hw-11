@@ -2,8 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HW11</title>
+    <title>Vanilla App Template</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,13 +15,16 @@
   </head>
   <body>
     <form class="form">
-      <input class="input" type="search" name="input" />
+      <input class="input" name="query" type="text" />
       <button class="button" type="submit">Search</button>
     </form>
 
     <span class="loader isInvisible">Loading</span>
 
     <ul class="gallery"></ul>
-    <script src="./main.js" type="module"></script>
+
+    <button type="button" class="btn isInvisible">Fetch more posts</button>
+
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
